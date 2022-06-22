@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import Alamofire
 
 class UsersViewController: UIViewController {
     
     @IBOutlet weak var UsersTableView: UITableView!
     
     private var arrayUsers: [User] = []
+    private let urlBase = "https://jsonplaceholder.typicode.com/"
+    private let endpointGetUsers = "users"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,82 +28,17 @@ class UsersViewController: UIViewController {
     }
     
     private func getData() {
-        arrayUsers = [
-            User(
-                id: 1,
-                name: "Pepe",
-                username: "Pepito",
-                email: "pepe12@jijojo",
-                adress: Adress(
-                    street: "3",
-                    suite: "f",
-                    city: "lolo",
-                    zipcode: "00090",
-                    geo: Geo(
-                        lat: "0.987",
-                        long: "89.76"
-                    )
-                ),
-                phone: "342546",
-                website: "",
-                company: Company(
-                    name: "pepelol",
-                    catchPhrase: "jijij",
-                    bs: "hsudu"
-                )
-            ),
-            User(
-                id: 2,
-                name: "Juan",
-                username: "Pepito",
-                email: "juan12@jijojo",
-                adress: Adress(
-                    street: "3",
-                    suite: "f",
-                    city: "lolo",
-                    zipcode: "00090",
-                    geo: Geo(
-                        lat: "0.987",
-                        long: "89.76"
-                    )
-                ),
-                phone: "0986543",
-                website: "",
-                company: Company(
-                    name: "pepelol",
-                    catchPhrase: "jijij",
-                    bs: "hsudu"
-                )
-            ),
-            User(
-                id: 1,
-                name: "Maria",
-                username: "Pepito",
-                email: "maria20@jijojo",
-                adress: Adress(
-                    street: "3",
-                    suite: "f",
-                    city: "lolo",
-                    zipcode: "00090",
-                    geo: Geo(
-                        lat: "0.987",
-                        long: "89.76"
-                    )
-                ),
-                phone: "78654098",
-                website: "",
-                company: Company(
-                    name: "pepelol",
-                    catchPhrase: "jijij",
-                    bs: "hsudu"
-                )
-            )
-        ]
-        
-        UsersTableView.reloadData()
+        let completeUrl = "\(urlBase)\(endpointGetUsers)"
+        AF.request(completeUrl).responseDecodable(of: [User].self) { response in
+            switch response.result {
+            case .success(let users):
+                self.arrayUsers = users
+                self.UsersTableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
-    
-    
 }
 
 extension UsersViewController: UITableViewDataSource {
