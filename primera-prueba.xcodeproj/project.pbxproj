@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		5572417A2857AB0A00781F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557241792857AB0A00781F77 /* AppDelegate.swift */; };
 		5572417C2857AB0A00781F77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5572417B2857AB0A00781F77 /* SceneDelegate.swift */; };
-		5572417E2857AB0A00781F77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5572417D2857AB0A00781F77 /* ViewController.swift */; };
-		557241812857AB0A00781F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5572417F2857AB0A00781F77 /* Main.storyboard */; };
+		5572417E2857AB0A00781F77 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5572417D2857AB0A00781F77 /* UsersViewController.swift */; };
 		557241832857AB0D00781F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557241822857AB0D00781F77 /* Assets.xcassets */; };
 		557241862857AB0D00781F77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557241842857AB0D00781F77 /* LaunchScreen.storyboard */; };
 		557241912857AB0E00781F77 /* primera_pruebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557241902857AB0E00781F77 /* primera_pruebaTests.swift */; };
 		5572419B2857AB0E00781F77 /* primera_pruebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5572419A2857AB0E00781F77 /* primera_pruebaUITests.swift */; };
 		5572419D2857AB0E00781F77 /* primera_pruebaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5572419C2857AB0E00781F77 /* primera_pruebaUITestsLaunchTests.swift */; };
+		557241AD2857CB5600781F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557241AC2857CB5600781F77 /* Main.storyboard */; };
+		557241AF2857D22800781F77 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557241AE2857D22800781F77 /* User.swift */; };
+		557241B32857E30A00781F77 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 557241B22857E30A00781F77 /* UserTableViewCell.xib */; };
+		557241B52857E46800781F77 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557241B42857E46800781F77 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,7 @@
 		557241762857AB0A00781F77 /* primera-prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "primera-prueba.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557241792857AB0A00781F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5572417B2857AB0A00781F77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5572417D2857AB0A00781F77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		557241802857AB0A00781F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5572417D2857AB0A00781F77 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		557241822857AB0D00781F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		557241852857AB0D00781F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		557241872857AB0D00781F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		557241962857AB0E00781F77 /* primera-pruebaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "primera-pruebaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5572419A2857AB0E00781F77 /* primera_pruebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primera_pruebaUITests.swift; sourceTree = "<group>"; };
 		5572419C2857AB0E00781F77 /* primera_pruebaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primera_pruebaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		557241AC2857CB5600781F77 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		557241AE2857D22800781F77 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		557241B22857E30A00781F77 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		557241B42857E46800781F77 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,11 @@
 		557241782857AB0A00781F77 /* primera-prueba */ = {
 			isa = PBXGroup;
 			children = (
-				557241792857AB0A00781F77 /* AppDelegate.swift */,
-				5572417B2857AB0A00781F77 /* SceneDelegate.swift */,
-				5572417D2857AB0A00781F77 /* ViewController.swift */,
-				5572417F2857AB0A00781F77 /* Main.storyboard */,
-				557241822857AB0D00781F77 /* Assets.xcassets */,
+				557241A92857ABBC00781F77 /* Controller */,
+				557241AA2857ABC500781F77 /* Model */,
+				557241AB2857ABCA00781F77 /* View */,
 				557241842857AB0D00781F77 /* LaunchScreen.storyboard */,
+				557241822857AB0D00781F77 /* Assets.xcassets */,
 				557241872857AB0D00781F77 /* Info.plist */,
 			);
 			path = "primera-prueba";
@@ -125,6 +130,34 @@
 				5572419C2857AB0E00781F77 /* primera_pruebaUITestsLaunchTests.swift */,
 			);
 			path = "primera-pruebaUITests";
+			sourceTree = "<group>";
+		};
+		557241A92857ABBC00781F77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5572417D2857AB0A00781F77 /* UsersViewController.swift */,
+				5572417B2857AB0A00781F77 /* SceneDelegate.swift */,
+				557241792857AB0A00781F77 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		557241AA2857ABC500781F77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				557241AE2857D22800781F77 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		557241AB2857ABCA00781F77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				557241AC2857CB5600781F77 /* Main.storyboard */,
+				557241B22857E30A00781F77 /* UserTableViewCell.xib */,
+				557241B42857E46800781F77 /* UserTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +264,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557241AD2857CB5600781F77 /* Main.storyboard in Resources */,
+				557241B32857E30A00781F77 /* UserTableViewCell.xib in Resources */,
 				557241862857AB0D00781F77 /* LaunchScreen.storyboard in Resources */,
 				557241832857AB0D00781F77 /* Assets.xcassets in Resources */,
-				557241812857AB0A00781F77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5572417E2857AB0A00781F77 /* ViewController.swift in Sources */,
+				557241AF2857D22800781F77 /* User.swift in Sources */,
+				5572417E2857AB0A00781F77 /* UsersViewController.swift in Sources */,
 				5572417A2857AB0A00781F77 /* AppDelegate.swift in Sources */,
 				5572417C2857AB0A00781F77 /* SceneDelegate.swift in Sources */,
+				557241B52857E46800781F77 /* UserTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5572417F2857AB0A00781F77 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				557241802857AB0A00781F77 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		557241842857AB0D00781F77 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

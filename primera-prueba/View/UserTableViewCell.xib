@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserTableViewCell" customModule="primera_prueba" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="1ZZ-HD-0fF" customClass="UserTableViewCell" customModule="primera_prueba" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ZZ-HD-0fF" id="OJ2-xT-CJi">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM2-f4-rvI">
+                        <rect key="frame" x="8" y="16" width="398" height="20"/>
+                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                        <color key="textColor" red="0.24832752350000001" green="0.54976946120000003" blue="0.12748026849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="80a-6w-34F" userLabel="Stack View phone">
+                        <rect key="frame" x="8" y="52" width="398" height="31"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-icon" translatesAutoresizingMaskIntoConstraints="NO" id="1cg-CR-cD3">
+                                <rect key="frame" x="0.0" y="0.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AUH-hI-XDV"/>
+                                    <constraint firstAttribute="width" constant="30" id="KN2-RK-ShW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="number phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zam-OK-CXC">
+                                <rect key="frame" x="38" y="5.5" width="360" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9vN-dQ-93Q" userLabel="Stack View email">
+                        <rect key="frame" x="8" y="99" width="398" height="30"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Nx4-1l-lTz">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Tuc-zI-iLV"/>
+                                    <constraint firstAttribute="height" constant="30" id="eyh-z6-U2t"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE0-2N-yRU">
+                                <rect key="frame" x="38" y="0.0" width="360" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="80a-6w-34F" firstAttribute="top" secondItem="XM2-f4-rvI" secondAttribute="bottom" constant="16" id="45q-sC-Ckn"/>
+                    <constraint firstItem="9vN-dQ-93Q" firstAttribute="leading" secondItem="OJ2-xT-CJi" secondAttribute="leading" constant="8" id="7Dr-Cx-4Rh"/>
+                    <constraint firstAttribute="trailing" secondItem="9vN-dQ-93Q" secondAttribute="trailing" constant="8" id="Clu-nf-zwl"/>
+                    <constraint firstItem="9vN-dQ-93Q" firstAttribute="top" secondItem="80a-6w-34F" secondAttribute="bottom" constant="16" id="H3e-5w-yAS"/>
+                    <constraint firstItem="XM2-f4-rvI" firstAttribute="leading" secondItem="OJ2-xT-CJi" secondAttribute="leading" constant="8" id="Os3-4c-7a9"/>
+                    <constraint firstItem="XM2-f4-rvI" firstAttribute="top" secondItem="OJ2-xT-CJi" secondAttribute="top" constant="16" id="cdL-4j-qC1"/>
+                    <constraint firstAttribute="trailing" secondItem="XM2-f4-rvI" secondAttribute="trailing" constant="8" id="e10-OH-P2e"/>
+                    <constraint firstAttribute="trailing" secondItem="80a-6w-34F" secondAttribute="trailing" constant="8" id="fmF-6r-aUg"/>
+                    <constraint firstAttribute="bottom" secondItem="9vN-dQ-93Q" secondAttribute="bottom" constant="16" id="sIL-4G-k21"/>
+                    <constraint firstItem="80a-6w-34F" firstAttribute="leading" secondItem="OJ2-xT-CJi" secondAttribute="leading" constant="8" id="spd-WC-mUW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emailLabel" destination="xE0-2N-yRU" id="X45-Wj-Mcb"/>
+                <outlet property="phoneLabel" destination="Zam-OK-CXC" id="x3U-iB-vFp"/>
+                <outlet property="usernameLabel" destination="XM2-f4-rvI" id="2pR-hY-5BT"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="134"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="email-icon" width="294" height="293.5"/>
+        <image name="phone-icon" width="384" height="384"/>
+    </resources>
+</document>
